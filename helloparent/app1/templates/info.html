@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Parent Portal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact/Query</a>
+        </li>
+       
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<div id="featured_slide">
+    <table width="890" border="0" align="center" cellpadding="5" cellspacing="10" background="">
+     <tbody>
+      {% for p in details %}
+      <tr>
+        <td width="25">&nbsp;</td>
+        <td width="144"><strong>Course</strong></td>
+        <td width="11"><strong>:</strong></td>
+        <td colspan="4">B.Tech</td>
+        <td colspan="2">&nbsp;</td>
+        <td colspan="2">&nbsp;</td>
+        <td width="50">&nbsp;</td>
+      </tr>
+     <tr>
+      <td>&nbsp;</td>
+      <td><strong>Branch</strong></td>
+      <td><strong>:</strong></td>
+      <td colspan="4"> {{p.branch}}</td>
+      <td colspan="2">&nbsp;</td>
+      <td colspan="2" rowspan="5"><div align="center"><img src="" alt=""></div></td>
+      <td>&nbsp;</td>
+     </tr>
+   <tr>
+   <td>&nbsp;</td>
+   <td><strong>Roll Number </strong></td>
+   <td><strong>:</strong></td>
+   <td colspan="4">{{p.Rollno}}</td>
+   <td colspan="2">&nbsp;</td>
+   <td>&nbsp;</td>
+   </tr>
+   <tr>
+   <td>&nbsp;</td>
+   <td><strong>Name</strong></td>
+   <td><strong>:</strong></td>
+   <td colspan="4">{{p.name}}</td>
+   <td colspan="2">&nbsp;</td>
+   <td>&nbsp;</td>
+   </tr>
+   <tr>
+   <td>&nbsp;</td>
+   <td><strong>Father's Name </strong></td>
+   <td><strong>:</strong></td>
+   <td colspan="4">{{p.fname}}</td>
+   <td colspan="2">&nbsp;</td>
+   <td>&nbsp;</td>
+   </tr>
+   <tr>
+  <td>&nbsp;</td>
+  <td><strong>Date of Birth </strong></td>
+  <td><strong>:</strong></td>
+  <td colspan="4">{{p.dob}}</td>
+  <td colspan="2">&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>&nbsp;</td>
+  <td><strong>Mentor </strong></td>
+  <td><strong>:</strong></td>
+  <td colspan="4">{{p.Mentor}} </td>
+  <td colspan="2">&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td>&nbsp;</td>
+  <td><strong>Gender</strong></td>
+  <td><strong>:</strong></td>
+  <td colspan="4">{{p.gender}}</td>
+  <td colspan="2">&nbsp;</td>
+  <td width="12">&nbsp;</td>
+  <td width="43">&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
+</div>    
+</body>
+</html>

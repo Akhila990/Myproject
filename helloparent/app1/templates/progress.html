@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table width="860" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse" background="images/bg.jpg">
+        <tbody>
+          {% for p in details %}
+          <tr>
+          <td align="center">Exam Series</td>
+          <td align="center">Subject Code</td>
+          <td align="center">Subject Name</td>
+          <td align="center">Grade</td>
+          <td align="center">Grade Point</td>
+          <td align="center">Credits</td>
+          <td align="center">Result</td>
+        </tr>
+                                       <tr>
+              <td align="center">REGULAR</td>
+              <td align="center">GR20A1001</td>
+              <td>&nbsp;&nbsp;Linear Algebra and Differential Calculus</td>
+              <td align="center">O</td>
+              <td align="center">{{p.LADC}}</td>
+              <td align="center">4</td>
+              <td align="center">P</td>                          
+            </tr>
+                                       <tr>
+              <td align="center">REGULAR</td>
+              <td align="center">GR20A1003</td>
+              <td>&nbsp;&nbsp;Applied Physics </td>
+              <td align="center">O</td>
+              <td align="center">{{p.AP}}</td>
+              <td align="center">4</td>
+              <td align="center">P</td>                          
+            </tr>
+                                       <tr>
+              <td align="center">REGULAR</td>
+              <td align="center">GR20A1006</td>
+              <td>&nbsp;&nbsp;English</td>
+              <td align="center">O</td>
+              <td align="center">{{p.ENG}}</td>
+              <td align="center">2</td>
+              <td align="center">P</td>                          
+            </tr>
+                                       <tr>
+              <td align="center">REGULAR</td>
+              <td align="center">GR20A1007</td>
+              <td>&nbsp;&nbsp;Programming for Problem Solving</td>
+              <td align="center">O</td>
+              <td align="center">10</td>
+              <td align="center">3</td>
+              <td align="center">P</td>                          
+            </tr>
+                                       <tr>
+              <td align="center">REGULAR</td>
+              <td align="center">GR20A1010</td>
+              <td>&nbsp;&nbsp;Engineering Graphics </td>
+              <td align="center">A+</td>
+              <td align="center">9</td>
+              <td align="center">3</td>
+              <td align="center">P</td>                          
+            </tr>
+                                       <tr>
+              <td align="center">REGULAR</td>
+              <td align="center">GR20A1012</td>
+              <td>&nbsp;&nbsp;Applied Physics  Lab</td>
+              <td align="center">O</td>
+              <td align="center">{{p.AP}}</td>
+              <td align="center">1.5</td>
+              <td align="center">P</td>                          
+            </tr>
+                                       <tr>
+              <td align="center">REGULAR</td>
+              <td align="center">GR20A1015</td>
+              <td>&nbsp;&nbsp;English Language and Communication Skills Lab</td>
+              <td align="center">O</td>
+              <td align="center">10</td>
+              <td align="center">1</td>
+              <td align="center">P</td>                          
+            </tr>
+                                       <tr>
+              <td align="center">REGULAR</td>
+              <td align="center">GR20A1016</td>
+              <td>&nbsp;&nbsp;Programming for Problem Solving Lab</td>
+              <td align="center">O</td>
+              <td align="center">10</td>
+              <td align="center">1.5</td>
+              <td align="center">P</td>                          
+            </tr>
+                                       <tr>
+              <td align="center">REGULAR</td>
+              <td align="center">GR20A1020</td>
+              <td>&nbsp;&nbsp;Design Thinking <b>**</b></td>
+              <td align="center">O</td>
+              <td align="center">10</td>
+              <td align="center">1</td>
+              <td align="center">P</td>                          
+            </tr>
+            {% endfor %}
+                                  </tbody></table>
+<br>
+<table width="860" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse" background="images/bg.jpg">
+    <tbody>
+      {% for p in details %}
+      <tr>
+      <td align="center">Exam Series</td>
+      <td align="center">Subject Code</td>
+      <td align="center">Subject Name</td>
+      <td align="center">Grade</td>
+      <td align="center">Grade Point</td>
+      <td align="center">Credits</td>
+      <td align="center">Result</td>
+    </tr>
+                                   <tr>
+          <td align="center">REGULAR</td>
+          <td align="center">GR20A1002</td>
+          <td>&nbsp;&nbsp;Differential Equations and Vector Calculus</td>
+          <td align="center">O</td>
+          <td align="center">{{p.DEVC}}</td>
+          <td align="center">4</td>
+          <td align="center">P</td>                          
+        </tr>
+                                   <tr>
+          <td align="center">REGULAR</td>
+          <td align="center">GR20A1005</td>
+          <td>&nbsp;&nbsp;Engineering Chemistry</td>
+          <td align="center">O</td>
+          <td align="center">{{p.CHEM}}</td>
+          <td align="center">4</td>
+          <td align="center">P</td>                          
+        </tr>
+                                   <tr>
+          <td align="center">REGULAR</td>
+          <td align="center">GR20A1008</td>
+          <td>&nbsp;&nbsp;Basic Electrical Engineering</td>
+          <td align="center">A+</td>
+          <td align="center">{{p.BEE}}</td>
+          <td align="center">3</td>
+          <td align="center">P</td>                          
+        </tr>
+                                   <tr>
+          <td align="center">REGULAR</td>
+          <td align="center">GR20A1011</td>
+          <td>&nbsp;&nbsp;Data Structures</td>
+          <td align="center">A+</td>
+          <td align="center">{{p.DS}}</td>
+          <td align="center">3</td>
+          <td align="center">P</td>                          
+        </tr>
+                                   <tr>
+          <td align="center">REGULAR</td>
+          <td align="center">GR20A1014</td>
+          <td>&nbsp;&nbsp;Engineering Chemistry Lab</td>
+          <td align="center">O</td>
+          <td align="center">10</td>
+          <td align="center">1.5</td>
+          <td align="center">P</td>                          
+        </tr>
+                                   <tr>
+          <td align="center">REGULAR</td>
+          <td align="center">GR20A1017</td>
+          <td>&nbsp;&nbsp;Basic Electrical Engineering Lab</td>
+          <td align="center">O</td>
+          <td align="center">10</td>
+          <td align="center">1</td>
+          <td align="center">P</td>                          
+        </tr>
+                                   <tr>
+          <td align="center">REGULAR</td>
+          <td align="center">GR20A1018</td>
+          <td>&nbsp;&nbsp;Data Structures Lab</td>
+          <td align="center">O</td>
+          <td align="center">{{p.DSL}}</td>
+          <td align="center">1</td>
+          <td align="center">P</td>                          
+        </tr>
+                                   <tr>
+          <td align="center">REGULAR</td>
+          <td align="center">GR20A1019</td>
+          <td>&nbsp;&nbsp;Engineering Workshop </td>
+          <td align="center">A+</td>
+          <td align="center">{{p.EWS}}</td>
+          <td align="center">2.5</td>
+          <td align="center">P</td>                          
+        </tr>
+                                   <tr>
+          <td align="center">REGULAR</td>
+          <td align="center">GR20A1021</td>
+          <td>&nbsp;&nbsp;Life Skills and Personality Development <b>**</b></td>
+          <td align="center">O</td>
+          <td align="center">{{p.LSPD}}</td>
+          <td align="center">1</td>
+          <td align="center">P</td>                          
+        </tr>
+        {% endfor %}
+                              </tbody></table>
+                              <br>
+                              <table width="860" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse" background="images/bg.jpg">
+                                <tbody>
+                                  {% for p in details %}
+                                  <tr>
+                                  <td align="center">Exam Series</td>
+                                  <td align="center">Subject Code</td>
+                                  <td align="center">Subject Name</td>
+                                  <td align="center">Grade</td>
+                                  <td align="center">Grade Point</td>
+                                  <td align="center">Credits</td>
+                                  <td align="center">Result</td>
+                                </tr>
+                                                               <tr>
+                                      <td align="center">REGULAR</td>
+                                      <td align="center">GR20A2002</td>
+                                      <td>&nbsp;&nbsp;Value Ethics and Gender Culture <b>**</b></td>
+                                      <td align="center">O</td>
+                                      <td align="center">{{p.VEGC}}</td>
+                                      <td align="center">2</td>
+                                      <td align="center">P</td>                          
+                                    </tr>
+                                                               <tr>
+                                      <td align="center">REGULAR</td>
+                                      <td align="center">GR20A2005</td>
+                                      <td>&nbsp;&nbsp;Probability and Statistics</td>
+                                      <td align="center">B+</td>
+                                      <td align="center">{{p.PS}}</td>
+                                      <td align="center">3</td>
+                                      <td align="center">P</td>                          
+                                    </tr>
+                                                               <tr>
+                                      <td align="center">REGULAR</td>
+                                      <td align="center">GR20A2067</td>
+                                      <td>&nbsp;&nbsp;Digital Logic Design</td>
+                                      <td align="center">O</td>
+                                      <td align="center">{{p.DLD}}</td>
+                                      <td align="center">3</td>
+                                      <td align="center">P</td>                          
+                                    </tr>
+                                                               <tr>
+                                      <td align="center">REGULAR</td>
+                                      <td align="center">GR20A2069</td>
+                                      <td>&nbsp;&nbsp;Discrete Mathematics</td>
+                                      <td align="center">O</td>
+                                      <td align="center">{{p.DM}}</td>
+                                      <td align="center">3</td>
+                                      <td align="center">P</td>                          
+                                    </tr>
+                                                               <tr>
+                                      <td align="center">REGULAR</td>
+                                      <td align="center">GR20A2070</td>
+                                      <td>&nbsp;&nbsp;Database Management Systems</td>
+                                      <td align="center">O</td>
+                                      <td align="center">{{p.DBMS}}</td>
+                                      <td align="center">3</td>
+                                      <td align="center">P</td>                          
+                                    </tr>
+                                                               <tr>
+                                      <td align="center">REGULAR</td>
+                                      <td align="center">GR20A2071</td>
+                                      <td>&nbsp;&nbsp;Scripting Languages Lab</td>
+                                      <td align="center">O</td>
+                                      <td align="center">{{p.SLL}}</td>
+                                      <td align="center">2</td>
+                                      <td align="center">P</td>                          
+                                    </tr>
+                                                               <tr>
+                                      <td align="center">REGULAR</td>
+                                      <td align="center">GR20A2073</td>
+                                      <td>&nbsp;&nbsp;Database Management Systems Lab</td>
+                                      <td align="center">O</td>
+                                      <td align="center">10</td>
+                                      <td align="center">1.5</td>
+                                      <td align="center">P</td>                          
+                                    </tr>
+                                                               <tr>
+                                      <td align="center">REGULAR</td>
+                                      <td align="center">GR20A2076</td>
+                                      <td>&nbsp;&nbsp;Java Programming</td>
+                                      <td align="center">O</td>
+                                      <td align="center">{{p.Java}}</td>
+                                      <td align="center">3</td>
+                                      <td align="center">P</td>                          
+                                    </tr>
+                                                               <tr>
+                                      <td align="center">REGULAR</td>
+                                      <td align="center">GR20A2080</td>
+                                      <td>&nbsp;&nbsp;Java Programming Lab</td>
+                                      <td align="center">O</td>
+                                      <td align="center">10</td>
+                                      <td align="center">2</td>
+                                      <td align="center">P</td>                          
+                                    </tr>
+                                    {% endfor %}
+                                                          </tbody></table>
+            
+</body>
+</html>

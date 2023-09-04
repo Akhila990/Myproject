@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Events</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .content-container {
+      display: flex;
+      max-width: 1000px;
+      margin: 20px;
+    }
+
+    .image-container {
+      flex: 1;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: auto;
+      border: 5px solid #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .events-container {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .event {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .event:hover {
+      transform: translateY(-5px);
+    }
+
+    .event-title {
+      font-size: 24px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .event-date {
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .event-description {
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Upcoming Events in College</h1>
+  </header>
+  <div class="content-container">
+    <div class="image-container">
+      <img src="https://images.unsplash.com/photo-1561489396-888724a1543d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" width="1000" height="520" padx="10" alt="College Image">
+    </div>
+    <div class="events-container">
+      <div class="event">
+        <div class="event-title">Annual Sports Meet</div>
+        <div class="event-date">August 15, 2023</div>
+        <div class="event-description">Join us for the exciting annual sports meet at the college grounds.</div>
+      </div>
+      <div class="event">
+        <div class="event-title">Cultural Fest</div>
+        <div class="event-date">September 5, 2023</div>
+        <div class="event-description">Don't miss the vibrant cultural fest featuring dance, music, and drama performances.</div>
+      </div>
+      <div class="event">
+        <div class="event-title">Science Exhibition</div>
+        <div class="event-date">September 25, 2023</div>
+        <div class="event-description">Explore the innovative projects showcased at our annual science exhibition.</div>
+      </div>
+      <div class="event">
+        <div class="event-title">College Orientation</div>
+        <div class="event-date">October 10, 2023</div>
+        <div class="event-description">Join us for the college orientation session for new students.</div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+</html>
